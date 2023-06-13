@@ -1,0 +1,74 @@
+@keyframes breath {
+    0%   { background-size: 100% auto; }
+    50%  { background-size: 160% auto; }
+    100% { background-size: 100% auto; }
+}
+
+html, body {
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    animation: breath 35s linear infinite;
+    background: url("OCP_ABOUT_1440.jpg") center center / cover no-repeat;
+}
+
+.navbar-brand {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.3s ease;
+  }
+
+  .user-login {
+    background-color: #b08968;
+  }
+
+  .admin-login {
+    background-color: #b08968;
+  }
+
+  .button:hover {
+    background-color: #333;
+  }

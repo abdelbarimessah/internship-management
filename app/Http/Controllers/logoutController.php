@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
+
+class logoutController extends Controller
+{
+    public function perform()
+    {
+        Session::flush();
+        
+        Auth::logout();
+        return redirect('/user/signup');
+    }
+}
